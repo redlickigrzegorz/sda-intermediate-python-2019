@@ -1,1 +1,1 @@
-# sda-intermediate-python-2019
+# SDA Python workshops 2019
