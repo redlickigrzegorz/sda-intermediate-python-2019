@@ -1,5 +1,7 @@
 from datetime import datetime
 
+from src.shop.rounding import round_value
+
 
 class Order:
 
@@ -16,5 +18,6 @@ class Order:
     def value(self):
         value = 0
         for item in self.items:
-            value += (item.product.price - item.product.price * self.discount) * item.quantity
+            product_value = item.product.price - round_value(item.product.price * self.discount)
+            value += product_value * item.quantity
         return value
