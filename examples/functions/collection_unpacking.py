@@ -38,3 +38,8 @@ if __name__ == '__main__':
         print(value)
 
     print([[key, value] for key, value in d.items()])
+
+    items = [item for item in d.items()]
+    items[0] = "zmieniłem się"
+    print(items)
+
