@@ -15,7 +15,9 @@ def tag(name, *content, cls=None, **attrs):
     else:
         return f'<{name}{attr_str} />'
 
-if __name__ == '__main__':
-    t = {"wiek": 25, "cls" : 'Koalski'}
 
+if __name__ == '__main__':
+    print(tag('Marian','Rudy', 'Wysoki', 'Biedny', 'Bezrobotny' , cls="Koalski", wiek=25))
+
+    t = {"wiek": 25, "cls" : 'Koalski'}
     print(tag('Marian','Rudy', 'Wysoki', 'Biedny', 'Bezrobotny' , **t ))
