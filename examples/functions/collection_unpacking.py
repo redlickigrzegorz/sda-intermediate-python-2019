@@ -37,9 +37,28 @@ if __name__ == '__main__':
         print(key)
         print(value)
 
+    t_list = [('a', 1), ('b', 2), ('c', 3)]
+    di={}
+    for key, value in t_list:
+        di[key]=value
+    print(di)
+
+    di2={key:value for key, value in t_list}
+    print(di2)
+
+    di3=dict(t_list)
+    print(di3)
+
     print([[key, value] for key, value in d.items()])
 
     items = [item for item in d.items()]
     items[0] = "zmieniłem się"
     print(items)
 
+    tuple_list = [(1,), (2,), (3,)]
+    result = []
+    for item in tuple_list:
+        result.append(item)
+    print(result)
+    result = [item for item in tuple_list]
+    print(result)
