@@ -25,3 +25,16 @@ if __name__ == '__main__':
     print(rest)
     print(middle)
     print(last)
+
+
+    d = {
+        'a': 1,
+        'b': 2,
+        'c': 3,
+
+    }
+    for key, value in d.items():
+        print(key)
+        print(value)
+
+    print([[key, value] for key, value in d.items()])
