@@ -9,7 +9,7 @@ def notify_everyone(orders: typing.List[Order]):
         order.customer.notify()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     bob = Customer("Bob")
     john = Customer("John")
 

@@ -8,7 +8,6 @@ from src.shop.product import Product
 
 
 class TestOrder(unittest.TestCase):
-
     @classmethod
     def setUpClass(cls) -> None:
         cls.customer = Customer("John", decimal.Decimal("0.00"))
@@ -60,5 +59,5 @@ class TestOrder(unittest.TestCase):
         self.assertEqual(expected_order_value, actual_order_value)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

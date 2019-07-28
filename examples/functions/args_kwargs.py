@@ -21,7 +21,7 @@ def sum_all(*args, **kwargs):
     return ret
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(sum_args(5, 8, 6, 3, 5))
     print(sum_kwargs(a1=5, a2=8, a3=6, a4=3, a5=5))
     print(sum_all(5, 8, a3=6, a4=3))

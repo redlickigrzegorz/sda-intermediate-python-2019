@@ -5,7 +5,6 @@ from src.shop.rounding import round_value
 
 
 class Order:
-
     def __init__(self, customer: Customer):
         self.items = []
         self.date = datetime.now()

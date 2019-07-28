@@ -1,7 +1,6 @@
+if __name__ == "__main__":
 
-if __name__ == '__main__':
-
-    course = (2019, 'SDA', 'bootcamp')
+    course = (2019, "SDA", "bootcamp")
     year, company, genre = course
 
     print(year)
@@ -27,11 +26,7 @@ if __name__ == '__main__':
     print(middle)
     print(last)
 
-    sample_dict = {
-        'a': 1,
-        'b': 2,
-        'c': 3,
-    }
+    sample_dict = {"a": 1, "b": 2, "c": 3}
     for item in sample_dict.items():
         print(item[0])
         print(item[1])
@@ -54,14 +49,14 @@ if __name__ == '__main__':
     result = [item for item in tuple_list]
     print(result)
 
-    dict_items = [('a', 1), ('b', 2), ('c', 3)]
-    dict_1={}
+    dict_items = [("a", 1), ("b", 2), ("c", 3)]
+    dict_1 = {}
     for key, value in dict_items:
-        dict_1[key]=value
+        dict_1[key] = value
     print(dict_1)
 
-    dict_2={key:value for key, value in dict_items}
+    dict_2 = {key: value for key, value in dict_items}
     print(dict_2)
 
-    dict_3=dict(dict_items)
+    dict_3 = dict(dict_items)
     print(dict_3)
