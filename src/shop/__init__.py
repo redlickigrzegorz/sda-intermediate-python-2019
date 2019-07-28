@@ -1,8 +1,10 @@
+import typing
+
 from src.shop.customer import Customer
 from src.shop.order import Order
 
 
-def notify_everyone(orders):
+def notify_everyone(orders: typing.List[Order]):
     for order in orders:
         order.customer.notify()
 
