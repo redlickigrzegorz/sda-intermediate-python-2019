@@ -1,3 +1,5 @@
+import copy
+
 if __name__ == '__main__':
     user1 = {
         'name': 'Marian',
@@ -72,7 +74,30 @@ if __name__ == '__main__':
     user5 = user4
     print(user5)
     user5['dogs'] = ['Pimpek', 'Ciapek']
-    # user5['children'].append('Michal')
     print(user5)
     print(user4)
+    print('#############')
 
+    user4 = {
+        'name': 'Ewa',
+        'children': ['Monika', 'Ewelina']
+    }
+
+    user5 = user4.copy()
+    user5['dogs'] = ['Pimpek', 'Ciapek']
+    print(user4)
+    print(user5)
+    user6 = dict(user4)
+    user6['cars'] = ['opel']
+    print(user4)
+    print(user6)
+
+    print('#############')
+    user7 = {
+        'name': 'Ewa',
+        'children': ['Monika', 'Ewelina']
+    }
+    user8 = copy.deepcopy(user7)
+    user8['children'].append('Michal')
+    print(user7)
+    print(user8)
