@@ -8,13 +8,13 @@ class Dog(Animal):
 
 
 class Duck(Animal):
-    def qua(self):
-        return "qua qua"
+    def quack(self):
+        return "quack quack"
 
 
 class Human:
-    def good_morning(self):
-        return "good morning"
+    def say_something(self):
+        return "Good morning!"
 
 
 if __name__ == '__main__':
@@ -34,8 +34,9 @@ if __name__ == '__main__':
     print(issubclass(Dog, Animal))
     print(issubclass(Animal, Dog))
 
-    print(hasattr(duck, "qua"))
-    print(getattr(duck, "qua")())  # print(duck.qua())
-    print(hasattr(duck, "good_morning"))
-    print(hasattr(human, "good_morning"))
+    print(hasattr(duck, "quack"))
+    print(getattr(duck, "quack")())  # print(duck.quack())
+    print(hasattr(duck, "say_something"))
+    print(hasattr(human, "say_something"))
+
     print(dir(human))

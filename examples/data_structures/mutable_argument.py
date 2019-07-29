@@ -31,7 +31,7 @@ if __name__ == '__main__':
     print(add_dogs('Pimpek'))
     print(add_dogs('Pimpek'))
 
-    print("####### --> properly")
+    print("################ --> properly")
     print(add_dogs_properly('Reksio'))
     print(add_dogs_properly('Reksio', []))
     print(add_dogs_properly('Pimpek'))
@@ -46,14 +46,14 @@ if __name__ == '__main__':
     print(a or b)
     print(b or a)
 
-    print("#######")
+    print("################")
     print_dt()
     print_dt()
     print_dt()
     print_dt()
     print_dt()
 
-    print("####### --> properly")
+    print("################ --> properly")
     print_dt_properly()
     print_dt_properly()
     print_dt_properly()

@@ -12,16 +12,21 @@ if __name__ == '__main__':
     print(id(list1))
     list1.append(8)
     print(id(list1))
+
+    print("################")
     tup1 = (11, 12, 14, 15)
     print(tup1.index(14))
     print(id(tup1))
-    print("#######")
+
+    print("################")
     list_str = ['ala ', 'ma', ' kota']
     result = ''
     for word in list_str:
         result += word
         print(id(result))
     print(result)
+
+    print("################")
     # print(result[2])
     # result[2] = 'd'
     print(sum_dif(10, 2))
@@ -29,10 +34,13 @@ if __name__ == '__main__':
     print(s)
     print(k)
 
+    print("################")
     zmienna:typing.Tuple[int, str] = (1, 'pies')
 
     a_int = 1
     l_int = [1, 2, 3, 4]
+    print(l_int)
     l_int2: typing.List[int] = []
     l_int2.append(1)
     l_int2.append("asda")
+    print(l_int2)

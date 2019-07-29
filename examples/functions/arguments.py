@@ -19,5 +19,6 @@ if __name__ == "__main__":
 
     arguments = ("123456789",)
     print(format_phone_number(*arguments))
+
     keyword_arguments = {"number": "123456789", "area_code": "+48", "delimiter": "_"}
     print(format_phone_number(**keyword_arguments))
