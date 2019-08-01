@@ -10,14 +10,10 @@ def notify_everyone(orders: typing.List[Order]):
     for order in orders:
         order.customer.notify()
 
-def place_order(customer, *items):
-    '''
-    # customer jako obiekt klasy, items jako lista [produkt, ilość"
-    - nie umiem tego zapisać poprzez typowanie
-    '''
+def place_order(customer: Customer, *items: typing.Tuple[Product, int]) -> Order:
     order = Order(customer)
     for i in items:
-        order.add_item(Item(i[0], i[1]))
+        order.add_item(i)
     return order
 
 
@@ -30,6 +26,9 @@ if __name__ == "__main__":
 
     notify_everyone([order_1, order_2])
 
-if __name__ == '__main__':
-    a = place_order(bob, [tv, 1], [iPhone, 1], [chocolate, 2])
+    #homework
+    item_tv = Item(tv, 1)
+    item_iPhone = Item(iPhone, 1)
+    item_chocolate = Item(chocolate, 2)
+    a = place_order(bob, item_tv, item_iPhone, item_chocolate)
     print(a.items)
