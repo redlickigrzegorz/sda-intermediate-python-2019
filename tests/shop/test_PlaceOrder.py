@@ -20,7 +20,7 @@ class TestPlaceOrder(unittest.TestCase):
         self.item2 = Item(self.book1, 2)
         self.item3 = Item(self.book2, 3)
 
-        #self.list_item =
+
 
     def test_01_calculate_order_value(self):
         order = place_order(self.cust1, self.item1, self.item2, self.item3)
@@ -31,8 +31,7 @@ class TestPlaceOrder(unittest.TestCase):
         self.assertIsInstance(self.cust1, Customer)
         self.assertIsInstance(order, Order)
 
-    def test_03_add_a_lot_of_item(self):
-        order = place_order(self.cust1, self.item1, self.item2, self.item3)
+    
 
 
 
