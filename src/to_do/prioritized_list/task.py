@@ -1,6 +1,4 @@
 from dataclasses import dataclass, field
-
-# @dataclass(frozen=True)
 from datetime import datetime, timedelta
 
 
@@ -8,6 +6,7 @@ def default_deadline() -> datetime:
     return datetime.now() + timedelta(days=2)
 
 
+# @dataclass(frozen=True)
 @dataclass
 class PrioritizedTask:
     name: str
