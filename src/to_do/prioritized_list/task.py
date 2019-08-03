@@ -29,7 +29,3 @@ task_02 = PrioritizedTask('Spacer', 'Zabierz psa', 4, datetime(2019, 6, 1))
 task_03 = PrioritizedTask('Smieci', 'wynies smieci', 4, datetime(2019, 4, 1))
 task_04 = PrioritizedTask('Samochod', 'Zatankuj', 2)
 task_05 = PrioritizedTask('Zakupy', 'Cos na obiad', 0)
-
-
-if __name__ == '__main__':
-    print(default_deadline())

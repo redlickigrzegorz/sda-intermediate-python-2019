@@ -1,4 +1,3 @@
-from collections import deque
 from unittest import TestCase
 
 from src.to_do.backlog import Backlog

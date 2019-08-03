@@ -6,8 +6,10 @@ task_01 = {
     'description': 'Posprzątaj pokój'
 }
 
+
 Task = namedtuple('Task', ('name', 'description'))
 task_02 = Task('Sprzatanie', 'Posprzataj pokoj')
+
 
 @dataclass
 class TaskClass:
@@ -20,7 +22,9 @@ class TaskClass:
     def __repr__(self):
         return f'{self.name}: {self.description}'
 
+
 task_03 = TaskClass('Sprzatanie', 'Posprzataj pokoj')
+
 
 if __name__ == '__main__':
     print(f'{task_01["name"]}: {task_01["description"]}')
