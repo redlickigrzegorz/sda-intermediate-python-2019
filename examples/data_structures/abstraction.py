@@ -1,5 +1,7 @@
 import abc
 
+import typing
+
 
 class Animal(abc.ABC):
     def __init__(self, name: str) -> None:
@@ -13,6 +15,9 @@ class Animal(abc.ABC):
 class Dog(Animal):
     def say_something(self):
         print('bark, bark')
+
+    def fetch(self):
+        print(f"Run {self.name}")
 
 
 class Duck(Animal):
@@ -28,9 +33,16 @@ class Giraffe(Animal):
 if __name__ == '__main__':
     dog = Dog('Thor')
     dog.say_something()
+    dog.fetch()
 
     duck = Duck('Donald')
     duck.say_something()
 
     giraffe = Giraffe('Frania')
     giraffe.say_something()
+
+    animals: typing.List[Animal] = [dog, duck, giraffe]
+
+    for animal in animals:
+        animal.say_something()
+        animal.fetch()
