@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 
+from src.to_do.base_list import BaseTask
+
 
 def default_deadline() -> datetime:
     return datetime.now() + timedelta(days=2)
@@ -8,14 +10,9 @@ def default_deadline() -> datetime:
 
 # @dataclass(frozen=True)
 @dataclass
-class PrioritizedTask:
-    name: str
-    description: str
+class PrioritizedTask(BaseTask):
     priority: int = field(default=0)
     deadline: datetime = field(default_factory=default_deadline)
-
-    def __repr__(self):
-        return f'{self.name}: {self.description}'
 
     def __lt__(self, other: 'PrioritizedTask') -> bool:
         if self.priority == other.priority:

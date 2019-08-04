@@ -1,14 +1,11 @@
 from dataclasses import dataclass
 
+from src.to_do.base_list import BaseTask
 
-# @dataclass(frozen=True)
+
 @dataclass
-class BacklogTask:
-    name: str
-    description: str
-
-    def __repr__(self):
-        return f'{self.name}: {self.description}'
+class BacklogTask(BaseTask):
+    pass
 
 
 task_01 = BacklogTask('Sprzatanie', 'Posprzataj pokoj')
