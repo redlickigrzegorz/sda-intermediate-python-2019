@@ -2,11 +2,11 @@ import typing
 from dataclasses import dataclass, field
 
 from src.to_do.backlog.task import BacklogTask
+from src.to_do.base_list import BaseListTask
 
 
 @dataclass
-class Backlog:
-    name: str = field(default='')
+class Backlog(BaseListTask):
     tasks: typing.List[BacklogTask] = field(default_factory=list)
 
     def add_task(self, task: BacklogTask) -> None:

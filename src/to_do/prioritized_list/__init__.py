@@ -2,12 +2,12 @@ import typing
 from dataclasses import dataclass, field
 from heapq import heappush, heappop
 
+from src.to_do.base_list import BaseListTask
 from src.to_do.prioritized_list.task import PrioritizedTask
 
 
 @dataclass
-class PrioritizedList:
-    name: str = field(default='')
+class PrioritizedList(BaseListTask):
     tasks: typing.List[PrioritizedTask] = field(default_factory=list)
 
     def add_task(self, task: PrioritizedTask) -> None:
