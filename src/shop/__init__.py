@@ -1,7 +1,19 @@
 import typing
 
 from src.shop.customer import Customer
+from src.shop.exceptions import EmptyOrderError
+from src.shop.item import Item
 from src.shop.order import Order
+
+
+def place_order(customer: Customer, *items: Item) -> Order:
+    if not items:
+        raise EmptyOrderError()
+
+    order = Order(customer)
+    for item in items:
+        order.add_item(item)
+    return order
 
 
 def notify_everyone(orders: typing.List[Order]):
