@@ -1,6 +1,5 @@
-from collections import namedtuple
-
 import typing
+from collections import namedtuple
 
 sum_ints = lambda a, b: a + b
 

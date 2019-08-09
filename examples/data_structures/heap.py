@@ -1,4 +1,4 @@
-from heapq import heappush, heappop
+from heapq import heappop, heappush
 
 if __name__ == "__main__":
     new_list = []

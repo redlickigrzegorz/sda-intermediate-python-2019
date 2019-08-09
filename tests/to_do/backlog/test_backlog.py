@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from src.to_do.backlog import Backlog
-from src.to_do.backlog.task import task_03, task_01, task_02
+from src.to_do.backlog.task import task_01, task_02, task_03
 
 
 class TestBacklog(TestCase):

@@ -1,6 +1,6 @@
 import typing
 from dataclasses import dataclass, field
-from heapq import heappush, heappop
+from heapq import heappop, heappush
 
 from src.to_do.base_list import BaseListTask
 from src.to_do.prioritized_list.task import PrioritizedTask

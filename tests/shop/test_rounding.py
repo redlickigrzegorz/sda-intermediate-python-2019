@@ -1,5 +1,6 @@
 import decimal
 import unittest
+
 from parameterized import parameterized
 
 from src.shop.rounding import round_value
