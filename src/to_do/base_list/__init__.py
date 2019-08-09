@@ -5,7 +5,7 @@ from src.to_do.base_list.task import BaseTask
 
 
 @dataclass
-class BaseListTask(abc.ABC):
+class BaseListTask(abc.ABC):  # type: ignore
     name: str = field(default="")
 
     @abc.abstractmethod

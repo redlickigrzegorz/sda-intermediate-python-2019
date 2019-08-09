@@ -17,7 +17,9 @@ class TestRounding(unittest.TestCase):
             (decimal.Decimal("0.12345"), 6, decimal.ROUND_UP, decimal.Decimal("0.123450")),
         ]
     )
-    def test_should_round_value_successfully(self, input_value, precision, rounding, expected_rounded_value):
+    def test_should_round_value_successfully(
+        self, input_value: decimal.Decimal, precision: int, rounding: str, expected_rounded_value: decimal.Decimal
+    ) -> None:
         actual_rounded_value = round_value(input_value, precision, rounding)
 
         self.assertEqual(actual_rounded_value, expected_rounded_value)

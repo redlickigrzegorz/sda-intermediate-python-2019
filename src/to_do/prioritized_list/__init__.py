@@ -10,10 +10,10 @@ from src.to_do.prioritized_list.task import PrioritizedTask
 class PrioritizedList(BaseListTask):
     tasks: typing.List[PrioritizedTask] = field(default_factory=list)
 
-    def add_task(self, task: PrioritizedTask) -> None:
+    def add_task(self, task: PrioritizedTask) -> None:  # type: ignore
         heappush(self.tasks, task)
 
-    def get_task(self) -> typing.Optional[PrioritizedTask]:
+    def get_task(self) -> typing.Optional[PrioritizedTask]:  # type: ignore
         if len(self.tasks) == 0:
             return None
         return heappop(self.tasks)

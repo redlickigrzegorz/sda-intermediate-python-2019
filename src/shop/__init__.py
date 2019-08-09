@@ -4,7 +4,7 @@ from src.shop.customer import Customer
 from src.shop.order import Order
 
 
-def notify_everyone(orders: typing.List[Order]):
+def notify_everyone(orders: typing.List[Order]) -> None:
     for order in orders:
         order.customer.notify()
 
