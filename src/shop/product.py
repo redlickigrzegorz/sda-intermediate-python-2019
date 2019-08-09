@@ -1,7 +1,12 @@
 import decimal
-from collections import namedtuple
+from dataclasses import dataclass
 
-Product = namedtuple("Product", ["name", "category", "price"])
+
+@dataclass
+class Product:
+    name: str
+    category: str
+    price: decimal.Decimal
 
 
 game = Product("The Witcher III", "PS4 games", decimal.Decimal("199.90"))

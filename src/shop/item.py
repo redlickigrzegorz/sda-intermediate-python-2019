@@ -1,3 +1,9 @@
-from collections import namedtuple
+from dataclasses import dataclass, field
 
-Item = namedtuple("Item", ["product", "quantity"])
+from src.shop.product import Product
+
+
+@dataclass
+class Item:
+    product: Product
+    quantity: int = field(default=1)
