@@ -15,3 +15,7 @@ class BaseListTask(abc.ABC):
     @abc.abstractmethod
     def get_task(self) -> BaseTask:
         pass
+
+    @abc.abstractmethod
+    def complete_task(self, task: BaseTask) -> None:
+        pass

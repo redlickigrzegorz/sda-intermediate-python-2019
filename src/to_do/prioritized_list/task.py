@@ -20,8 +20,8 @@ class PrioritizedTask(BaseTask):
         return self.priority > other.priority
 
 
-task_01 = PrioritizedTask('Sprzatanie', 'Posprzataj pokoj', 0, datetime(2019, 5, 1))
-task_02 = PrioritizedTask('Spacer', 'Zabierz psa', 4, datetime(2019, 6, 1))
-task_03 = PrioritizedTask('Smieci', 'wynies smieci', 4, datetime(2019, 4, 1))
-task_04 = PrioritizedTask('Samochod', 'Zatankuj', 2)
-task_05 = PrioritizedTask('Zakupy', 'Cos na obiad', 0)
+prioritized_task_01 = PrioritizedTask('Sprzatanie', 'Posprzataj pokoj', priority=0, deadline=datetime(2019, 5, 1))
+prioritized_task_02 = PrioritizedTask('Spacer', 'Zabierz psa', priority=4, deadline=datetime(2019, 6, 1))
+prioritized_task_03 = PrioritizedTask('Smieci', 'wynies smieci', priority=4, deadline=datetime(2019, 4, 1))
+prioritized_task_04 = PrioritizedTask('Samochod', 'Zatankuj', priority=2)
+prioritized_task_05 = PrioritizedTask('Zakupy', 'Cos na obiad', priority=0)
