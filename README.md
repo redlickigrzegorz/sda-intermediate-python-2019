@@ -7,3 +7,8 @@ $ isort -rc .
 $ mypy .
 $ flake8 .
 ```
+
+### Unit tests
+```bash
+$ python -m unittest
+```
