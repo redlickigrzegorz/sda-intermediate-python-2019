@@ -17,7 +17,7 @@ class Human:
         return "Good morning!"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     dog = Dog()
     duck = Duck()
     human = Human()

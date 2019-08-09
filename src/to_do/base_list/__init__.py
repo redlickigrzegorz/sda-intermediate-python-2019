@@ -6,7 +6,7 @@ from src.to_do.base_list.task import BaseTask
 
 @dataclass
 class BaseListTask(abc.ABC):
-    name: str = field(default='')
+    name: str = field(default="")
 
     @abc.abstractmethod
     def add_task(self, task: BaseTask) -> None:

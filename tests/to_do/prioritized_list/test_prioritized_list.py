@@ -37,4 +37,3 @@ class TestPrioritizedList(TestCase):
         task = my_list.get_task()
 
         self.assertEqual(None, task)
-

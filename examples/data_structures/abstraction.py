@@ -14,7 +14,7 @@ class Animal(abc.ABC):
 
 class Dog(Animal):
     def say_something(self):
-        print('bark, bark')
+        print("bark, bark")
 
     def fetch(self):
         print(f"Run {self.name}")
@@ -22,23 +22,23 @@ class Dog(Animal):
 
 class Duck(Animal):
     def say_something(self):
-        print('quack, quack')
+        print("quack, quack")
 
 
 class Giraffe(Animal):
     def say_something(self):
-        print('mniam, mniam')
+        print("mniam, mniam")
 
 
-if __name__ == '__main__':
-    dog = Dog('Thor')
+if __name__ == "__main__":
+    dog = Dog("Thor")
     dog.say_something()
     dog.fetch()
 
-    duck = Duck('Donald')
+    duck = Duck("Donald")
     duck.say_something()
 
-    giraffe = Giraffe('Frania')
+    giraffe = Giraffe("Frania")
     giraffe.say_something()
 
     animals: typing.List[Animal] = [dog, duck, giraffe]

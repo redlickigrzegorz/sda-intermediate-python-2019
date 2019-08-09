@@ -10,7 +10,7 @@ if __name__ == "__main__":
     print(f"a = {a}")
     print(f"b = {b}")
 
-    print('#############')
+    print("#############")
     c = 4
     d = 6
     print(f"c = {c}")
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     print(f"c = {c}")
     print(f"d = {d}")
 
-    print('#############')
+    print("#############")
     e = 8
     f = 10
     print(f"e = {e}")

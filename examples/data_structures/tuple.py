@@ -1,13 +1,13 @@
 import typing
 
 
-def sum_dif(a: int, b: int)-> typing.Tuple[int, int]:
+def sum_dif(a: int, b: int) -> typing.Tuple[int, int]:
     c = a + b
     d = a - b
     return c, d
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     list1 = [1, 2, 3, 4]
     print(id(list1))
     list1.append(8)
@@ -19,8 +19,8 @@ if __name__ == '__main__':
     print(id(tup1))
 
     print("################")
-    list_str = ['ala ', 'ma', ' kota']
-    result = ''
+    list_str = ["ala ", "ma", " kota"]
+    result = ""
     for word in list_str:
         result += word
         print(id(result))
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     print(k)
 
     print("################")
-    zmienna:typing.Tuple[int, str] = (1, 'pies')
+    zmienna: typing.Tuple[int, str] = (1, "pies")
 
     a_int = 1
     l_int = [1, 2, 3, 4]

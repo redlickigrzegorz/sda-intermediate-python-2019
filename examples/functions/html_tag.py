@@ -16,6 +16,6 @@ def tag(name, *content, cls=None, **attrs):
 if __name__ == "__main__":
     print(tag("Marian", "Rudy", "Wysoki", "Biedny", "Bezrobotny", cls="Koalski", wiek=25))
 
-    print('#############')
+    print("#############")
     t = {"wiek": 25, "cls": "Koalski"}
     print(tag("Marian", "Rudy", "Wysoki", "Biedny", "Bezrobotny", **t))
