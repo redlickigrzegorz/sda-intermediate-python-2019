@@ -1,6 +1,8 @@
 from datetime import datetime
 
 from src.shop import Customer
+from src.shop.exceptions import ItemValueNotPositive
+from src.shop.item import Item
 from src.shop.rounding import round_value
 
 
@@ -11,8 +13,11 @@ class Order:
         self.customer = customer
         self.discount = customer.personal_discount / 100
 
-    def add_item(self, item):
-        self.items.append(item)
+    def add_item(self, item: Item):
+        if item.quantity > 0 and item.product.price > 0:
+            self.items.append(item)
+        else:
+            raise ItemValueNotPositive()
 
     @property
     def value(self):
