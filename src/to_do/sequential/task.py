@@ -17,6 +17,10 @@ task_01 = SequentialTask('Nauka', 'Zadanie_01')
 task_02 = SequentialTask('Sprzątanie', 'Posprzątaj łazienkę')
 task_03 = SequentialTask('Sprzątanie', 'Posprzątaj łazienkę3')
 
+if __name__ == '__main__':
+    print(task_01.created_at)
+    print(task_03.created_at)
+
 
 
 
