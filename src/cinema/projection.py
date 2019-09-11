@@ -18,6 +18,13 @@ class Projection:
         self.movie = movie
         self.projection_start = projection_start
         self.projection_end = projection_start + timedelta(minutes=movie.movie_lenght_in_minutes)
+        self.booked_seats = []
+
+projection_01 = Projection(hall_01, movie_01, datetime(2019, 9, 2, 11, 00))
+projection_02 = Projection(hall_02, movie_02, datetime(2019, 9, 2, 11, 00))
+
+if __name__ == '__main__':
+    print(projection_01)
 
 
 
